@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hw1 {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; /* 가운데 정렬을 위한 추가 */
+  display: flex;
+  /* */
 }
 
-.App-link {
-  color: #61dafb;
+/* 왼쪽 부분 css (이하 .left 생략 )=========================================================================== */
+
+.left {
+  flex: 30%;
+  background-color: moccasin;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.photo_box {
+  padding: 30% 10% 10% 10%;
 }
+
+.photo_box .photo {
+  width: 90%;
+  height: 80%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.description {
+  margin-bottom: 10%;
+}
+
+.description .name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.description .position {
+  font-size: 20px;
+}
+
+.bar {
+  border: none;
+  height: 3px;
+  background-color: white;
+}
+
+.sns {
+  padding : 5% 0% 5% 0%;
+}
+
+.sns .icon {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.Hello {
+  padding: 10px 10px 10px 10px;
+  font-size: 40px;
+}
+
+/* 오른쪽 부분 css (이하 .right 생략 ) =========================================================================== */
+
+.right {
+  flex: 70%;
+  margin: 0 auto; /* 가운데 정렬을 위한 추가 */
+  background-color: beige;
+}
+
+/* 개인 설명이 들어가는 div에 대한 css 부분입니다! */
+
