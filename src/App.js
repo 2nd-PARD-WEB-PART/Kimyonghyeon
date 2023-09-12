@@ -38,11 +38,17 @@ function App() {
                   {/* 기타 정보 */}
                   <div className="etc">
                       <div className={"header"}>
-                          ETC
+                          TMI
                       </div>
                       <div className={"inside_text"}>
                           <div className={"text"}>
-                              1. 깃허브 잔디 빼곡하게 심기
+                              1. 퍼스널컬러는 가을 웜 딥 입니다
+                          </div>
+                          <div className={"text"}>
+                              2. '아 옷 사야지'라고 하면 그냥 넘겨주시면 됩니다. 100번쯤 하면 하나 삽니다
+                          </div>
+                          <div className={"text"}>
+                              3. 전산 하기 전부터 애플 팬보이였어서 웬만한건 다 써봤습니다 (살까말까 고민중이면 말씀주세요)
                           </div>
                       </div>
                   </div>
@@ -72,12 +78,19 @@ function App() {
                       </div>
                       <div className={"inside_text"}>
                           <div className={"text"}>
-                              1. 깃허브 잔디 빼곡하게 심기
+                              1. 축구 (대전 하나 시티즌 많은 사랑 부탁드립니다)
+                          </div>
+                          <div className={"text"}>
+                              2. 강아지 (본가에 뚱돼지 포메라니안 하나 키우고 있습니다)
+                              <a href={"https://www.instagram.com/mynameis_mayo"}><img src="/img/insta.png" className="icon"/></a>
+                          </div>
+                          <div className={"text"}>
+                              3. 요리 (주말에는 꼭 하기도 하고, 친한 친구들이랑 같이 먹는 거 좋아합니다)
                           </div>
                       </div>
                   </div>
               </div>
-              <div className={"footer"}>
+              <div className="footer">
                   <p>Copyright © 2023 <b>PARD | Cocomong98</b> All rights reserved.</p>
               </div>
           </div>
