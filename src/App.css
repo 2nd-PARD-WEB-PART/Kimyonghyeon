@@ -10,6 +10,12 @@
   /* */
 }
 
+/*
+기본폰트는 ""이지만, 여러 가지 폰트를 적용시켜보고싶어 변경해봤습니다.
+font-face를 통해 css 코드에 해당 코드에 대한 기본정보를 선언하고, 실제로 사용할 때는 font-family를 사용합니다
+font-face에 대한 정보는 폰트 설명 페이지에 보통 적혀 있습니다
+*/
+
 @font-face {
   font-family: 'HakgyoansimWoojuR';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
@@ -55,13 +61,31 @@
 
 .description .name {
   font-weight: bold;
-  font-size: 30px;
-  padding-bottom: 10px;
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.description .position {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-.description .position {
-  font-size: 20px;
-  padding-bottom: 3px;
+@media (min-width: 2100px) {
+  .description .name {
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+  }
+  .description .position {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .header {
+    font-size: 4rem;
+  }
+  .inside_text .text{
+    margin: 1% 1%;
+    font-size: 2.2rem;
+  }
 }
 
 .bar {
@@ -107,7 +131,7 @@
 
 .text{
   margin: 1% 1%;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .header {

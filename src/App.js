@@ -26,6 +26,7 @@ function App() {
 
               {/* SNS */}
               <div className="sns">
+                  {/*a 태그에 이동할 경로를 입력하고, 실제 출력될 화면에 img 태그를 넣으면 사진을 눌러 링크 활성화가 가능합니다*/}
                   <a href="https://www.instagram.com/cocomong_98/"><img src="/img/insta.png" className="icon"/></a>
                   <a href="https://github.com/Cocomong98"><img src="/img/github.png" className={"icon"}/></a>
                   <a href="https://www.acmicpc.net/user/cocomong98"><img src="/img/backjoon.png" className={"icon"}/></a>
@@ -91,6 +92,7 @@ function App() {
                   </div>
               </div>
               <div className="footer">
+                  {/*footer는 한번 달아보고 싶어서 달아봤습니다*/}
                   <p>Copyright © 2023 <b>PARD | Cocomong98</b> All rights reserved.</p>
               </div>
           </div>
