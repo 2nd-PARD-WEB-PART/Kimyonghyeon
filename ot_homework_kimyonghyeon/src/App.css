@@ -1,0 +1,164 @@
+.hw1 {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; /* 가운데 정렬을 위한 추가 */
+  display: flex; /* 왼쪽 오른쪽을 비율로 맞추기 위해 사용 */
+  align-items: stretch; /* 하위 클래스 left, right의 높이를 자동으로 맞춤 */
+  font-family: HakgyoansimWoojuR;
+  /* */
+}
+
+/*
+기본폰트는 ""이지만, 여러 가지 폰트를 적용시켜보고싶어 변경해봤습니다.
+font-face를 통해 css 코드에 해당 코드에 대한 기본정보를 선언하고, 실제로 사용할 때는 font-family를 사용합니다
+font-face에 대한 정보는 폰트 설명 페이지에 보통 적혀 있습니다
+*/
+
+@font-face {
+  font-family: 'HakgyoansimWoojuR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HakgyoansimBareondotumB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimBareondotumB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HakgyoansimBareondotumR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimBareondotumB.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 왼쪽 부분 css (이하 .left 생략 )=========================================================================== */
+
+.left {
+  flex: 30%;
+  background-color: moccasin;
+}
+
+.photo_box {
+  padding: 20% 10% 10% 10%;
+}
+
+.photo_box .photo {
+  width: 90%;
+  height: 80%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.description {
+  margin-bottom: 5%;
+}
+
+.description .name {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.description .position {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 2100px) {
+  .description .name {
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+  }
+  .description .position {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .header {
+    font-size: 4rem;
+  }
+  .inside_text .text{
+    margin: 1% 1%;
+    font-size: 2.2rem;
+  }
+}
+
+.bar {
+  border: none;
+  height: 3px;
+  margin: 0% 7% 0% 7%;
+  border-top: 5px dotted white;
+}
+
+.sns {
+  padding : 5% 0% 5% 0%;
+  font-size: 20px;
+}
+
+.sns .icon {
+  width: 40px;
+  height: 40px;
+  padding: 1% 5% 1% 5%;
+}
+
+.Hello {
+  padding: 10px 10px 10px 10px;
+  font-size: 40px;
+}
+
+/* 오른쪽 부분 css (이하 .right 생략 ) =========================================================================== */
+
+.right {
+  flex: 70%;
+  margin: 0 auto; /* 가운데 정렬을 위한 추가 */
+  background-color: white;
+  position: relative;
+}
+
+.inside {
+  padding: 3% 5% 3% 5%;
+}
+
+.inside_text{
+  padding: 2% 3% 2% 3%;
+  text-align: left;
+}
+
+.text{
+  margin: 1% 1%;
+  font-size: 1.5rem;
+}
+
+.header {
+  border: 5px solid moccasin;
+  border-radius: 2em;
+  font-size: 25px;
+  padding-top: 3px;
+  padding-top: 3px;
+  font-weight: bolder;
+  font-family: HakgyoansimBareondotumR;
+}
+
+.text .icon {
+  width: 2%;
+  height: 2%;
+}
+
+.footer {
+  font-family: HakgyoansimBareondotumR;
+  position: absolute;
+  bottom: 0%;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 5%;
+}
+
+/* 개인 설명이 들어가는 div에 대한 css 부분입니다! */
+
+
+
