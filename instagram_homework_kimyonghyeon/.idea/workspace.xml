@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d315ce3a-0a5e-4271-9e9c-1813d1f840b5" name="Changes" comment="Complete" />
+    <list default="true" id="d315ce3a-0a5e-4271-9e9c-1813d1f840b5" name="Changes" comment="Complete">
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/HomeBtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/NewPosts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/Options.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/Posts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/Save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/Tagged.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/insta_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/likeBtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/public/img/mayo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/Article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/Articles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/Edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/pages/Top.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/font/Abel_Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3_kimyonghyeon/src/assets/font/Abel_Regular.woff" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,22 +56,22 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Rebasing main",
-    "last_opened_file_path": "/Users/cocomong_98/IdeaProjects/React/Kimyonghyeon/instagram_homework_kimyonghyeon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Rebasing test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cocomong_98/IdeaProjects/React/Kimyonghyeon/instagram_homework_kimyonghyeon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -56,7 +86,10 @@
       <option name="presentableId" value="Default" />
       <updated>1695368503276</updated>
       <workItem from="1695368504317" duration="91000" />
-      <workItem from="1695368774644" duration="1125000" />
+      <workItem from="1695368774644" duration="1854000" />
+      <workItem from="1695444238638" duration="21000" />
+      <workItem from="1697193361233" duration="3815000" />
+      <workItem from="1697206708319" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Complete">
       <option name="closed" value="true" />
