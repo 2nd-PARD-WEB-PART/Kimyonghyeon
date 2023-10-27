@@ -33,6 +33,14 @@ const Icon = styled.div`
     padding: 10px;
 `;
 
+const Mayo = styled.img`
+  padding: 10px;
+  margin: 2px;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+`
+
 const BtnBox = styled.div`
     padding 10px;
 `;
@@ -56,7 +64,7 @@ export default function Top() {
                         </Link>
                         <Btns src={"/img/NewPosts.png"}/>
                         <Btns src={"/img/likeBtn.png"}/>
-                        <Btns src={"/img/NewPosts.png"}/>
+                        <Mayo src={"/img/mayo.jpg"}/>
                     </BtnBox>
                 </Header>
             </Top_back>

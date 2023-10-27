@@ -48,7 +48,14 @@ const Right = styled.div`
 function Edit(){
     const navigate = useNavigate();
     const location = useLocation();
-    const userData = location.state ? location.state.userData : {};
+    const userData = location.state ? location.state : {};
+
+    // console.log(location.state )
+    // const [userData, setUserData] = React.useState({
+    //     name: "Mayo",
+    //     description: "Hello",
+    // });
+
     const [editedData, setEditedData] = React.useState(userData);
 
     const placeholder = (e) => {
@@ -77,12 +84,12 @@ function Edit(){
                     <form onSubmit={dataToBody}>
                         <label>
                             이름:
-                            <input type="text" name="name" value={editedData.name || ''} placeholder={userData.name} onChange={placeholder} />
+                            <input type="text" name="name"  placeholder={userData.name} onChange={placeholder} />
                         </label>
                         <br />
                         <label>
                             소개:
-                            <input type="text" name="description" value={editedData.description || ''} placeholder={userData.description} onChange={placeholder} />
+                            <input type="text" name="description" placeholder={userData.description} onChange={placeholder} />
                         </label>
                         <br />
                         <label>

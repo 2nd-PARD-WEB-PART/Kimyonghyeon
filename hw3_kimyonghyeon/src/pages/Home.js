@@ -152,22 +152,23 @@ const CommentButton = styled.button`
 export default function Body() {
     const [like, setLike] = useState(2);
     const nickname = "asdf";
+    const [commentsList, setCommentsList] = useState([]);
+    const [comment, setComment] = useState("");
+    const [isCommentPosted, setIsCommentPosted] = useState(false);
 
     const likeAdd = () => {
         setLike(like + 1);
     };
 
-    const [comment, setComment] = useState("");
-    const [isCommentPosted, setIsCommentPosted] = useState(false);
-
     const handleCommentPost = () => {
         if (comment.trim() !== "") {
+            setCommentsList([...commentsList, comment]);
+            setComment(""); // 댓글을 추가한 후 입력 창 비우기
             setIsCommentPosted(true);
         }
     };
 
-
-    return(
+    return (
         <Body_Back>
             <Body_Center>
                 <Posts>
@@ -184,9 +185,9 @@ export default function Body() {
                     <TopBox>
                         좋아요 {like} 개
                     </TopBox>
-                    <TopBox>
-                        {isCommentPosted ? comment : null}
-                    </TopBox>
+                    {commentsList.map((comment, index) => (
+                        <TopBox key={index}>{comment}</TopBox>
+                    ))}
                     <TopBox>
                         <CommentBox
                             placeholder="댓글을 입력하세요"
@@ -195,7 +196,6 @@ export default function Body() {
                         />
                         <CommentButton onClick={handleCommentPost}>게시</CommentButton>
                     </TopBox>
-
                 </Posts>
             </Body_Center>
         </Body_Back>
