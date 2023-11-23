@@ -14,12 +14,19 @@ const initialUserData = {
     imgURL: '',
 };
 
+const id = "김현중";
+
+const headers = {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOUR_ACCESS_TOKEN",
+}
+
 export const UserProvider = ({ children }) => {
     const [data, setData] = useState(initialUserData);
 
     useEffect(() => {
         axios
-            .get("http://3.35.236.83/pard/search/김용현")
+            .get(`http://3.35.236.83/pard/search/${id}`, {headers})
             .then((response) => {
                 console.log("response: " + JSON.stringify(response.data.data));
                 setData(response.data.data);

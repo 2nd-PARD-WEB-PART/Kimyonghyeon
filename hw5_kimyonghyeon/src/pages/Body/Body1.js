@@ -18,18 +18,20 @@ export default function Body1() {
     const [displayedUserData, setDisplayedUserData] = React.useState({
         name: "mayo",
         age: "3",
-        imgurl: "/img/Options.png",
+        imgURL: "/img/Options.png",
     });
 
     React.useEffect(() => {
-        setDisplayedUserData(userData);
-        console.log("데이터 출력:", userData); // 수정된 부분
+        if (userData) {
+            setDisplayedUserData(userData);
+            console.log("데이터 출력:", userData); // 수정된 부분
+        }
     }, [userData]);
 
     const goEdit = () => {
         return (
             <Link to="/edit" onClick={() => navigate('/edit', { state: { userData } })}>
-                <s.Img src={displayedUserData.imgurl} alt="Mayo"></s.Img>
+                <s.Img src={displayedUserData.imgURL} alt="Mayo"></s.Img>
             </Link>
         );
     };
@@ -41,7 +43,7 @@ export default function Body1() {
             <s.Body_Center>
                 <s.Profile>
                     <Link to="/edit" state={userData}>
-                        <s.Img src={displayedUserData.imgurl}></s.Img>
+                        {userData && <s.Img src={displayedUserData.imgURL}></s.Img>}
                     </Link>
                     <s.ProfileText>
                         <s.T>
@@ -50,7 +52,7 @@ export default function Body1() {
                             <s.TImg src={"/img/Options.png"}></s.TImg>
                         </s.T>
                         <s.T2>게시물 3 팔로우 20 팔로워 25</s.T2>
-                        <s.T3>{displayedUserData.age}</s.T3>
+                        <s.T3>{displayedUserData.age} 세</s.T3>
                     </s.ProfileText>
                 </s.Profile>
                 <s.NavBox>
