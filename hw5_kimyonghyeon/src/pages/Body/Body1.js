@@ -4,11 +4,9 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useUser } from "../../UserContext";
 import * as s from './BodyStyle1';
 
-
 export default function Body1() {
     const navigate = useNavigate();
     const location = useLocation();
-
     const { userData, setUserData } = useUser();
 
     React.useEffect(() => {
@@ -19,27 +17,31 @@ export default function Body1() {
 
     const [displayedUserData, setDisplayedUserData] = React.useState({
         name: "mayo",
-        description: "pomeranian",
+        age: "3",
+        imgurl: "/img/Options.png",
     });
 
     React.useEffect(() => {
         setDisplayedUserData(userData);
+        console.log("데이터 출력:", userData); // 수정된 부분
     }, [userData]);
 
     const goEdit = () => {
         return (
             <Link to="/edit" onClick={() => navigate('/edit', { state: { userData } })}>
-                <s.Img src={"img/mayo.jpg"} alt="Mayo"></s.Img>
+                <s.Img src={displayedUserData.imgurl} alt="Mayo"></s.Img>
             </Link>
         );
     };
+
+    console.log("데이터 출력:", userData); // 수정된 부분
 
     return (
         <s.Body_Back>
             <s.Body_Center>
                 <s.Profile>
                     <Link to="/edit" state={userData}>
-                        <s.Img src={"img/mayo.jpg"}></s.Img>
+                        <s.Img src={displayedUserData.imgurl}></s.Img>
                     </Link>
                     <s.ProfileText>
                         <s.T>
@@ -48,7 +50,7 @@ export default function Body1() {
                             <s.TImg src={"/img/Options.png"}></s.TImg>
                         </s.T>
                         <s.T2>게시물 3 팔로우 20 팔로워 25</s.T2>
-                        <s.T3>{displayedUserData.description}</s.T3>
+                        <s.T3>{displayedUserData.age}</s.T3>
                     </s.ProfileText>
                 </s.Profile>
                 <s.NavBox>
