@@ -3,7 +3,12 @@
  - 인스타그램 클론코딩 - context api + mediaquery 
 
 ## Screenshot
- <img src="./1.png">
+ - case1:750 이상
+ <img src="./1.png"><br />
+ - case2:750 이하 450 이상
+ <img src="./2.png"><br />
+ - case3:450 이하
+ <img src="./3.png"><br />
 
 ## About Project
 
