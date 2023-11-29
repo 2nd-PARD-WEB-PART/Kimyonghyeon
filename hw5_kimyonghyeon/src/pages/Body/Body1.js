@@ -28,13 +28,15 @@ export default function Body1() {
         }
     }, [userData]);
 
-    const goEdit = () => {
-        return (
-            <Link to="/edit" onClick={() => navigate('/edit', { state: { userData } })}>
-                <s.Img src={displayedUserData.imgURL} alt="Mayo"></s.Img>
-            </Link>
-        );
-    };
+    React.useEffect(() => {
+        const goEdit = () => {
+            return (
+                <Link to="/edit" onClick={() => navigate('/edit', { state: { userData } })}>
+                    <s.Img src={displayedUserData.imgURL} alt="Mayo"></s.Img>
+                </Link>
+            );
+        };
+    }, [navigate, userData]);
 
     console.log("데이터 출력:", userData); // 수정된 부분
 

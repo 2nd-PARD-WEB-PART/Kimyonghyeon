@@ -14,7 +14,7 @@ const initialUserData = {
     imgURL: '',
 };
 
-const id = "김현중";
+const id = "김용현";
 
 const headers = {
     "Content-Type": "application/json",

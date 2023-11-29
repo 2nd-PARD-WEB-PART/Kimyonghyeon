@@ -19,14 +19,17 @@ import Body3 from "./pages/Body/Body3";
 
 function App() {
     // 이것저것 다 하다가 결국 true = undefined / false = null 인 것까지만 확인함
-    const isSmall = useMediaQuery({ maxWidth: 449 });
-    const isMedium = useMediaQuery({ minWidth: 450, maxWidth: 749 });
-    const isBig = useMediaQuery({ minWidth: 750 });
+    const isSmall = useMediaQuery({ 
+        query:  "(max-width: 449px)" });
+    const isMedium = useMediaQuery({ 
+        query: "(min-width: 450px) and (max-width: 749px)" });
+    const isBig = useMediaQuery({ 
+        query: "(min-width: 750px)" });
 
-    // 변동값 확인을 위해 consloe.log 출력 (주석처리)
-    // console.log("isSmall:", isSmall);
-    // console.log("isMedium:", isMedium);
-    // console.log("isBig:", isBig);
+    //변동값 확인을 위해 consloe.log 출력 (주석처리)
+    console.log("isSmall:", isSmall);
+    console.log("isMedium:", isMedium);
+    console.log("isBig:", isBig);
 
     let TopType = Top1;
     let BodyType = Body1;
