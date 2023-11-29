@@ -3,11 +3,11 @@
  - 인스타그램 클론코딩 - context api + mediaquery 
 
 ## Screenshot
- - case1:750 이상
+ - case1:750 이상 <br />
  <img src="./1.png"><br />
- - case2:750 이하 450 이상
+ - case2:750 이하 450 이상 <br />
  <img src="./2.png"><br />
- - case3:450 이하
+ - case3:450 이하 <br />
  <img src="./3.png"><br />
 
 ## About Project
