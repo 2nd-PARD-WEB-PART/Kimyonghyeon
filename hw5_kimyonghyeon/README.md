@@ -1,7 +1,12 @@
 # Instagram HW #5
 
- - 인스타그램 클론코딩 - axios 연습 <br>
- <img src="./public/img/insta_ss.png">
+## Screenshot
+ - 최초 실행화면 <br />
+ <img src="./1.png"><br />
+ - 정보 수정화면 <br />
+ <img src="./2.png"><br />
+ - 수정된 이후의 화면 <br />
+ <img src="./3.png"><br />
 
 ## About Project
 
@@ -13,7 +18,8 @@
 
 ## Pages
 
- - 
+ - root : 기본 페이지
+ - Edit : 수정 페이지
 
 ## 수정
 
