@@ -7,6 +7,7 @@ import axios from 'axios';
 
 const UserContext = createContext();
 
+// 초기값 선언 (get에 필요)
 const initialUserData = {
     name: '',
     age: 0,
@@ -14,6 +15,7 @@ const initialUserData = {
     imgURL: '',
 };
 
+// 최초 post에서 불러올 사용자명
 const id = "김용현";
 
 const headers = {
@@ -21,16 +23,20 @@ const headers = {
     Authorization: "Bearer YOUR_ACCESS_TOKEN",
 }
 
+// 프로바이더 내부를 선언
 export const UserProvider = ({ children }) => {
     const [data, setData] = useState(initialUserData);
 
+    // 한 번만 가져오기
     useEffect(() => {
+        // get을 사용해서 정보 불러오기
         axios
             .get(`http://3.35.236.83/pard/search/${id}`, {headers})
             .then((response) => {
                 console.log("response: " + JSON.stringify(response.data.data));
                 setData(response.data.data);
             })
+            // 예외처리
             .catch((error) => console.log("error: " + error));
     }, []);
 
@@ -41,6 +47,7 @@ export const UserProvider = ({ children }) => {
     );
 };
 
+// 밖에서 사용하는 useUser
 export const useUser = () => {
     const { userData, setUserData } = useContext(UserContext);
     return { userData, setUserData };
