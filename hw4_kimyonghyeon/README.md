@@ -3,7 +3,7 @@
  - 인스타그램 클론코딩 - context api + mediaquery 
 
 ## Screenshot
- <img src="./1.png">
+ <img src="./1.png">
 
 ## About Project
 
